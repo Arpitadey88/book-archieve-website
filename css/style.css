@@ -1,0 +1,19 @@
+body{
+    background-color: #e1dcc5;
+}
+h4{
+    color: rgb(20, 81, 105);
+}
+.font-clr{
+   font-weight: bold;
+   color: rgb(38, 120, 153);
+}
+.li-bg{
+    background-color: rgb(38, 120, 153);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.main-bg{
+    background-color: beige;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Archieve</title>
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand font-clr" href="#">
+                <h3>Book Archive</h3>
+            </a>
+            <div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ps-4">
+                        <a class="nav-link li-bg px-4" aria-current="page" href="#">Login</a>
+                    </li>
+                    <li class="nav-item ps-4">
+                        <a class="nav-link li-bg px-3" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container border rounded main-bg">
+        <div class="row my-2">
+            <div class="col-md-6">
+                <h4>Welcome to Open Library</h4>
+            </div>
+            <div class="input-group w-50 col-md-6 ">
+                <ul class="nav nav-tabs bg-light">
+                    <li class="nav-item dropdown border">
+                        <a class="nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-expanded="false">All</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">All</a></li>
+                            <li><a class="dropdown-item" href="#">Title</a></li>
+                            <li><a class="dropdown-item" href="#">Author</a></li>
+                            <li><a class="dropdown-item" href="#">Lists</a></li>
+                            <li><a class="dropdown-item" href="#">Advanced</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <input id="search-field" type="text" class="form-control bg-light" placeholder="Search"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button onclick="searchBooks()" class="btn btn-outline-secondary bg-danger" type="button"
+                    id="search-btn"><i class="fas fa-search text-white"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
