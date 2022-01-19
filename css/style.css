@@ -1,5 +1,5 @@
 body{
-    background-color: #e1dcc5;
+    background-color: whitesmoke;
 }
 h4{
     color: rgb(20, 81, 105);
@@ -15,5 +15,16 @@ h4{
     border-radius: 5px;
 }
 .main-bg{
-    background-color: beige;
+    background-color: gainsboro;
+}
+.book-card{
+    height: 480px;
+    width: 335px;
+    border: 2px solid goldenrod;
+    background-color: black;
+    color:white;
+}
+.book-card-img{
+    height: 200px;
+    width: 100%;
 }

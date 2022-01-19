@@ -65,23 +65,23 @@ const showBookResult = books => {
         const bookDiv = document.createElement('div');
         bookDiv.classList.add('col');
         bookDiv.innerHTML = `
-                <div class="card h-100">
-                    <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top" alt="Image Not Found">
+                <div class="book-card mt-4">
+                    <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="book-card-img" alt="Image Not Found">
                     <div class="card-body">
                         <h5>${book.title}</h5>
-                        <p>Author Name: ${book.author_name[0]}</p>
-                        <p>Publisher:${book.publisher[0]}</p>
+                        <p>Author Name: ${book.author_name?.[0]}</p>
+                        <p>Publisher:${book.publisher?.[0]}</p>
                         <p>First Publish Date:${book.first_publish_year}</p>
-                        <p>Result Found: ${books.length}</p>  
+                       
                     </div>
-                    <div class="card-footer">
-                        <button class="li-bg">Details</button>
+                    <div class="card-footer border border-warning border-1 bottom-0">
+                        <h5 class="text-center fw-bold text-warning">Details</h5>
                     </div>
                 </div>
                 `;
         searchResult.appendChild(bookDiv);
         if (books.length > 0) {
-            document.getElementById('total-result').innerText = `Found ${books.length} Books`;
+            document.getElementById('total-result').innerText = `Found ${books.length} out of ${books.numFound} Books`;
         }
     })
 }
